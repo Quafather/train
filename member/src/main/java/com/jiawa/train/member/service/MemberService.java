@@ -9,6 +9,6 @@ public class MemberService {
     @Resource
     private MemberMapper memberMapper;
     public int count(){
-        return memberMapper.count();
+        return (int) memberMapper.countByExample(null);
     }
 }

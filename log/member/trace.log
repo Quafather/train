@@ -1113,3 +1113,61 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean def
 2025-05-06 17:02:43.333 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
 2025-05-06 17:02:43.338 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
 2025-05-06 17:02:43.344 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2025-05-06 17:02:45.280 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 26064 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
+2025-05-06 17:02:45.282 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-06 17:02:45.315 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-06 17:02:45.316 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-06 17:02:45.798 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=3b9ffb75-e695-3722-986a-6dffd04c85a7
+2025-05-06 17:02:46.168 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
+2025-05-06 17:02:46.178 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2025-05-06 17:02:46.179 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
+2025-05-06 17:02:46.179 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-06 17:02:46.218 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-05-06 17:02:46.219 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 903 ms
+2025-05-06 17:02:46.737 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-05-06 17:02:46.793 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2025-05-06 17:02:46.805 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
+2025-05-06 17:02:46.820 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 1.899 seconds (process running for 2.488)
+2025-05-06 17:02:46.822 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
+2025-05-06 17:02:46.822 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
+2025-05-06 17:02:51.357 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06 17:02:51.357 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-05-06 17:02:51.359 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2025-05-06 17:02:51.381 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m17465221713789a9  [0;39m ------------- 开始 -------------
+2025-05-06 17:02:51.383 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m17465221713789a9  [0;39m 请求地址: http://127.0.0.1:8001/member/member/count GET
+2025-05-06 17:02:51.383 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m17465221713789a9  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.count
+2025-05-06 17:02:51.383 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m17465221713789a9  [0;39m 远程地址: 127.0.0.1
+2025-05-06 17:02:51.466 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m17465221713789a9  [0;39m 请求参数: []
+2025-05-06 17:02:51.476 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m17465221713789a9  [0;39m HikariPool-1 - Starting...
+2025-05-06 17:02:51.671 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m17465221713789a9  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d19404e
+2025-05-06 17:02:51.673 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m17465221713789a9  [0;39m HikariPool-1 - Start completed.
+2025-05-06 17:02:51.678 DEBUG com.jiawa.train.member.mapper.MemberMapper.count  :135  [32m17465221713789a9  [0;39m ==>  Preparing: select count(1) from member
+2025-05-06 17:02:51.695 DEBUG com.jiawa.train.member.mapper.MemberMapper.count  :135  [32m17465221713789a9  [0;39m ==> Parameters: 
+2025-05-06 17:02:51.710 TRACE com.jiawa.train.member.mapper.MemberMapper.count  :141  [32m17465221713789a9  [0;39m <==    Columns: count(1)
+2025-05-06 17:02:51.710 TRACE com.jiawa.train.member.mapper.MemberMapper.count  :141  [32m17465221713789a9  [0;39m <==        Row: 2
+2025-05-06 17:02:51.714 DEBUG com.jiawa.train.member.mapper.MemberMapper.count  :135  [32m17465221713789a9  [0;39m <==      Total: 1
+2025-05-06 17:02:51.719 INFO  com.jiawa.train.common.aspect.LogAspect           :107  [32m17465221713789a9  [0;39m 返回结果: 2
+2025-05-06 17:02:51.719 INFO  com.jiawa.train.common.aspect.LogAspect           :108  [32m17465221713789a9  [0;39m ------------- 结束 耗时：341 ms -------------
+2025-05-06 17:07:24.406 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 17:07:24.431 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-05-06 17:07:24.437 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2025-05-06 17:07:24.447 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2025-05-06 17:52:25.814 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 17912 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
+2025-05-06 17:52:25.816 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-06 17:52:25.847 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-06 17:52:25.848 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-06 17:52:26.330 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=3b9ffb75-e695-3722-986a-6dffd04c85a7
+2025-05-06 17:52:26.746 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
+2025-05-06 17:52:26.756 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2025-05-06 17:52:26.757 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
+2025-05-06 17:52:26.757 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-06 17:52:26.796 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-05-06 17:52:26.797 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 949 ms
+2025-05-06 17:52:27.343 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-05-06 17:52:27.391 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2025-05-06 17:52:27.402 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
+2025-05-06 17:52:27.416 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 1.94 seconds (process running for 2.503)
+2025-05-06 17:52:27.418 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
+2025-05-06 17:52:27.419 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
+2025-05-06 17:52:36.029 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 17:52:36.042 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete

@@ -38,3 +38,123 @@
 2025-05-06 10:35:35.429 INFO  com.jiawa.train.member.config.MemberApplication   :22   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
 2025-05-06 10:35:38.861 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
 2025-05-06 10:35:38.874 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-05-06 10:53:59.958 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
+2025-05-06 10:53:59.990 INFO  com.jiawa.train.gateway.config.GatewayApplication :53   [32m                  [0;39m Starting GatewayApplication using Java 21.0.2 with PID 19088 (E:\12306-train\train\gateway\target\classes started by user in E:\12306-train\train)
+2025-05-06 10:53:59.992 INFO  com.jiawa.train.gateway.config.GatewayApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-06 10:54:00.452 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=e54710c9-ed8e-36b9-ab80-eef2323aaa28
+2025-05-06 10:54:00.895 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2025-05-06 10:54:00.896 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2025-05-06 10:54:00.897 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-05-06 10:54:00.897 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2025-05-06 10:54:00.897 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-05-06 10:54:01.167 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :126  [32m                  [0;39m Netty started on port 8000 (http)
+2025-05-06 10:54:01.203 INFO  com.jiawa.train.gateway.config.GatewayApplication :59   [32m                  [0;39m Started GatewayApplication in 1.648 seconds (process running for 2.452)
+2025-05-06 10:54:01.206 INFO  com.jiawa.train.gateway.config.GatewayApplication :20   [32m                  [0;39m 启动成功!
+2025-05-06 10:54:01.206 INFO  com.jiawa.train.gateway.config.GatewayApplication :21   [32m                  [0;39m 网关地址：	http://127.0.0.1:8000/test
+2025-05-06 10:54:21.925 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 16656 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
+2025-05-06 10:54:21.926 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-06 10:54:21.958 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-06 10:54:21.958 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-06 10:54:22.386 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=fc5705d2-840d-334f-b643-8688bc564d3f
+2025-05-06 10:54:22.812 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
+2025-05-06 10:54:22.824 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2025-05-06 10:54:22.825 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
+2025-05-06 10:54:22.825 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-06 10:54:22.867 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-05-06 10:54:22.867 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 908 ms
+2025-05-06 10:54:23.268 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-05-06 10:54:23.314 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2025-05-06 10:54:23.326 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
+2025-05-06 10:54:23.340 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 1.767 seconds (process running for 2.338)
+2025-05-06 10:54:23.343 INFO  com.jiawa.train.member.config.MemberApplication   :21   [32m                  [0;39m 启动成功!
+2025-05-06 10:54:23.344 INFO  com.jiawa.train.member.config.MemberApplication   :22   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
+2025-05-06 10:55:30.861 INFO  o.s.boot.web.embedded.netty.GracefulShutdown      :53   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 10:55:30.863 INFO  o.s.boot.web.embedded.netty.GracefulShutdown      :62   [32m                  [0;39m Graceful shutdown complete
+2025-05-06 10:55:35.516 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
+2025-05-06 10:55:35.541 INFO  com.jiawa.train.gateway.config.GatewayApplication :53   [32m                  [0;39m Starting GatewayApplication using Java 21.0.2 with PID 20112 (E:\12306-train\train\gateway\target\classes started by user in E:\12306-train\train)
+2025-05-06 10:55:35.542 INFO  com.jiawa.train.gateway.config.GatewayApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-06 10:55:35.962 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=e54710c9-ed8e-36b9-ab80-eef2323aaa28
+2025-05-06 10:55:36.385 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2025-05-06 10:55:36.385 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2025-05-06 10:55:36.385 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2025-05-06 10:55:36.385 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2025-05-06 10:55:36.385 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2025-05-06 10:55:36.385 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2025-05-06 10:55:36.385 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2025-05-06 10:55:36.385 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2025-05-06 10:55:36.386 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2025-05-06 10:55:36.386 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2025-05-06 10:55:36.386 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2025-05-06 10:55:36.386 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-05-06 10:55:36.386 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2025-05-06 10:55:36.386 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-05-06 10:55:36.645 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :126  [32m                  [0;39m Netty started on port 8000 (http)
+2025-05-06 10:55:36.682 INFO  com.jiawa.train.gateway.config.GatewayApplication :59   [32m                  [0;39m Started GatewayApplication in 1.496 seconds (process running for 2.013)
+2025-05-06 10:55:36.683 INFO  com.jiawa.train.gateway.config.GatewayApplication :20   [32m                  [0;39m 启动成功!
+2025-05-06 10:55:36.685 INFO  com.jiawa.train.gateway.config.GatewayApplication :21   [32m                  [0;39m 网关地址：	http://127.0.0.1:8000
+2025-05-06 10:56:17.928 INFO  o.s.boot.web.embedded.netty.GracefulShutdown      :53   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 10:56:17.930 INFO  o.s.boot.web.embedded.netty.GracefulShutdown      :62   [32m                  [0;39m Graceful shutdown complete
+2025-05-06 10:57:01.032 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
+2025-05-06 10:57:01.056 INFO  com.jiawa.train.gateway.config.GatewayApplication :53   [32m                  [0;39m Starting GatewayApplication using Java 21.0.2 with PID 17928 (E:\12306-train\train\gateway\target\classes started by user in E:\12306-train\train)
+2025-05-06 10:57:01.057 INFO  com.jiawa.train.gateway.config.GatewayApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-06 10:57:01.452 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=e54710c9-ed8e-36b9-ab80-eef2323aaa28
+2025-05-06 10:57:01.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2025-05-06 10:57:01.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2025-05-06 10:57:01.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2025-05-06 10:57:01.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2025-05-06 10:57:01.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2025-05-06 10:57:01.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2025-05-06 10:57:01.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2025-05-06 10:57:01.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2025-05-06 10:57:01.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2025-05-06 10:57:01.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2025-05-06 10:57:01.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2025-05-06 10:57:01.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-05-06 10:57:01.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2025-05-06 10:57:01.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :89   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-05-06 10:57:02.111 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :126  [32m                  [0;39m Netty started on port 8000 (http)
+2025-05-06 10:57:02.148 INFO  com.jiawa.train.gateway.config.GatewayApplication :59   [32m                  [0;39m Started GatewayApplication in 1.425 seconds (process running for 1.922)
+2025-05-06 10:57:02.150 INFO  com.jiawa.train.gateway.config.GatewayApplication :20   [32m                  [0;39m 启动成功!
+2025-05-06 10:57:02.151 INFO  com.jiawa.train.gateway.config.GatewayApplication :21   [32m                  [0;39m 网关地址：	http://127.0.0.1:8000
+2025-05-06 10:57:16.676 INFO  o.s.boot.web.embedded.netty.GracefulShutdown      :53   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 10:57:16.678 INFO  o.s.boot.web.embedded.netty.GracefulShutdown      :62   [32m                  [0;39m Graceful shutdown complete
+2025-05-06 11:00:46.233 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 11:00:46.249 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-05-06 11:01:04.107 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 2472 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
+2025-05-06 11:01:04.108 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-06 11:01:04.140 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-06 11:01:04.140 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-06 11:01:04.524 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=fc5705d2-840d-334f-b643-8688bc564d3f
+2025-05-06 11:01:04.915 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
+2025-05-06 11:01:04.925 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2025-05-06 11:01:04.927 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
+2025-05-06 11:01:04.927 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-06 11:01:04.966 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-05-06 11:01:04.967 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 826 ms
+2025-05-06 11:01:05.429 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-05-06 11:01:05.481 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2025-05-06 11:01:05.495 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
+2025-05-06 11:01:05.509 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 1.773 seconds (process running for 2.394)
+2025-05-06 11:01:05.511 INFO  com.jiawa.train.member.config.MemberApplication   :21   [32m                  [0;39m 启动成功!
+2025-05-06 11:01:05.512 INFO  com.jiawa.train.member.config.MemberApplication   :22   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
+2025-05-06 11:01:58.574 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06 11:01:58.574 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-05-06 11:01:58.575 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2025-05-06 11:01:58.602 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746500518598hfy  [0;39m ------------- 开始 -------------
+2025-05-06 11:01:58.603 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746500518598hfy  [0;39m 请求地址: http://127.0.0.1:8001/member/test GET
+2025-05-06 11:01:58.603 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746500518598hfy  [0;39m 类名方法: com.jiawa.train.member.controller.TestController.test
+2025-05-06 11:01:58.603 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746500518598hfy  [0;39m 远程地址: 127.0.0.1
+2025-05-06 11:01:58.703 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746500518598hfy  [0;39m 请求参数: []
+2025-05-06 11:01:58.704 INFO  com.jiawa.train.common.aspect.LogAspect           :107  [32m1746500518598hfy  [0;39m 返回结果: "Hello, Spring Boot!"
+2025-05-06 11:01:58.704 INFO  com.jiawa.train.common.aspect.LogAspect           :108  [32m1746500518598hfy  [0;39m ------------- 结束 耗时：106 ms -------------
+2025-05-06 11:09:46.088 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 11:09:46.104 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete

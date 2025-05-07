@@ -69,7 +69,7 @@ public class LogAspect {
             arguments[i] = args[i];
         }
         // 排除字段，敏感字段或太长的字段不显示：身份证、手机号、邮箱、密码等
-        String[] excludeProperties = {"password", "idCard", "mobile", "email"};
+        String[] excludeProperties = {"password", "idCard",  "email"};
         PropertyFilter filter = (object, name1, value) -> {
             for (String excludeProperty : excludeProperties) {
                 if (name1.equals(excludeProperty)) {
@@ -93,7 +93,7 @@ public class LogAspect {
         long startTime = System.currentTimeMillis();
         Object result = proceedingJoinPoint.proceed();
         // 排除字段，敏感字段或太长的字段不显示：身份证、手机号、邮箱、密码等
-        String[] excludeProperties = {"password", "idCard", "mobile", "email"};
+        String[] excludeProperties = {"password", "idCard", "email"};
 
         PropertyFilter filter = (object, name, value) -> {
             for (String excludeProperty : excludeProperties) {

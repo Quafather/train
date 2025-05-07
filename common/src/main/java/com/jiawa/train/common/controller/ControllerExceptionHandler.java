@@ -35,6 +35,27 @@ public class ControllerExceptionHandler {
     }
 
     /**
+     * 校验异常统一处理
+     * @param e
+     * @return
+     */
+    @ExceptionHandler(value = BindException.class)
+    @ResponseBody
+    public CommonResp exceptionHandler(BindException e) {
+        // LOG.info("seata全局事务ID: {}", RootContext.getXID());
+        // // 如果是在一次全局事务里出异常了，就不要包装返回值，将异常抛给调用方，让调用方回滚事务
+        // if (StrUtil.isNotBlank(RootContext.getXID())) {
+        //     throw e;
+        // }
+        CommonResp commonResp = new CommonResp();
+        LOG.error("系统异常：{}", e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
+        commonResp.setSuccess(false);
+        commonResp.setMessage(e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
+        return commonResp;
+    }
+
+
+    /**
      * 所有异常统一处理
      * @param e
      * @return

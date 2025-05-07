@@ -20,7 +20,7 @@ public class MemberService {
         return (int) memberMapper.countByExample(null);
     }
 
-    public long register(MemberRegisterReq req){
+    public long register( MemberRegisterReq req){
         String mobile = req.getMobile();
         MemberExample memberExample = new MemberExample();
         //createCriteria()是创建一个while条件

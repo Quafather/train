@@ -1,667 +1,138 @@
-2025-05-07 10:43:10.167 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 7820 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 10:43:10.171 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 10:43:10.213 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-07 10:43:10.214 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-07 10:43:10.762 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=66c3d467-3fbb-3b17-aa84-5ccaedd30892
-2025-05-07 10:43:11.226 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 10:43:11.238 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:43:11.239 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 10:43:11.240 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 10:43:11.290 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 10:43:11.291 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1076 ms
-2025-05-07 10:43:11.951 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 10:43:12.008 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:43:12.022 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 10:43:12.038 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 2.262 seconds (process running for 2.965)
-2025-05-07 10:43:12.040 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 10:43:12.040 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 10:43:21.924 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-07 10:43:21.924 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2025-05-07 10:43:21.924 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
-2025-05-07 10:43:21.962 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746585801957iey  [0;39m ------------- 开始 -------------
-2025-05-07 10:43:21.963 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746585801957iey  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 10:43:21.963 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746585801957iey  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 10:43:21.963 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746585801957iey  [0;39m 远程地址: 127.0.0.1
-2025-05-07 10:43:22.087 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746585801957iey  [0;39m 请求参数: [{"mobile":"12345667"}]
-2025-05-07 10:43:22.122 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1746585801957iey  [0;39m HikariPool-1 - Starting...
-2025-05-07 10:43:22.420 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1746585801957iey  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e45a52a
-2025-05-07 10:43:22.421 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1746585801957iey  [0;39m HikariPool-1 - Start completed.
-2025-05-07 10:43:22.428 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746585801957iey  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 10:43:22.446 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746585801957iey  [0;39m ==> Parameters: 12345667(String)
-2025-05-07 10:43:22.473 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746585801957iey  [0;39m <==    Columns: id, mobile
-2025-05-07 10:43:22.474 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746585801957iey  [0;39m <==        Row: 1746533892224, 12345667
-2025-05-07 10:43:22.475 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746585801957iey  [0;39m <==      Total: 1
-2025-05-07 10:43:22.484 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m1746585801957iey  [0;39m 系统异常：
-com.jiawa.train.common.exception.BusinessException: null
-	at com.jiawa.train.member.service.MemberService.register(MemberService.java:32)
-	at com.jiawa.train.member.controller.MemberController.register(MemberController.java:27)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.jiawa.train.common.aspect.LogAspect.doAround(LogAspect.java:94)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
-	at com.jiawa.train.member.controller.MemberController$$SpringCGLIB$$0.register(<generated>)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-07 10:43:22.523 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1746585801957iey  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2025-05-07 10:47:34.767 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-05-07 10:47:34.771 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 10:47:34.773 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:47:34.788 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 10:47:34.788 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:47:34.817 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2025-05-07 10:47:34.866 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2025-05-07 10:47:34.963 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 7820 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 10:47:34.964 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 10:47:35.159 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=66c3d467-3fbb-3b17-aa84-5ccaedd30892
-2025-05-07 10:47:35.262 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 10:47:35.263 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:47:35.263 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 10:47:35.263 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 10:47:35.286 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 10:47:35.286 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 320 ms
-2025-05-07 10:47:35.556 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 10:47:35.591 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:47:35.593 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 10:47:35.604 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.685 seconds (process running for 266.53)
-2025-05-07 10:47:35.606 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 10:47:35.606 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 10:47:35.606 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 10:47:36.988 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-05-07 10:47:36.990 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 10:47:36.990 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:47:37.002 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 10:47:37.004 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:47:37.079 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 7820 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 10:47:37.080 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 10:47:37.209 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=66c3d467-3fbb-3b17-aa84-5ccaedd30892
-2025-05-07 10:47:37.282 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 10:47:37.283 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:47:37.283 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 10:47:37.283 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 10:47:37.311 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 10:47:37.311 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 229 ms
-2025-05-07 10:47:37.505 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 10:47:37.536 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:47:37.538 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 10:47:37.551 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.507 seconds (process running for 268.477)
-2025-05-07 10:47:37.552 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 10:47:37.552 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 10:47:37.552 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 10:47:44.003 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-07 10:47:44.003 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2025-05-07 10:47:44.004 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
-2025-05-07 10:47:44.006 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746586064006ayw  [0;39m ------------- 开始 -------------
-2025-05-07 10:47:44.007 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746586064006ayw  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 10:47:44.007 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746586064006ayw  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 10:47:44.007 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746586064006ayw  [0;39m 远程地址: 127.0.0.1
-2025-05-07 10:47:44.008 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746586064006ayw  [0;39m 请求参数: [{"mobile":"12345667"}]
-2025-05-07 10:47:44.010 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1746586064006ayw  [0;39m HikariPool-2 - Starting...
-2025-05-07 10:47:44.034 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1746586064006ayw  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@523be9b3
-2025-05-07 10:47:44.035 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1746586064006ayw  [0;39m HikariPool-2 - Start completed.
-2025-05-07 10:47:44.035 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586064006ayw  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 10:47:44.035 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586064006ayw  [0;39m ==> Parameters: 12345667(String)
-2025-05-07 10:47:44.038 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586064006ayw  [0;39m <==    Columns: id, mobile
-2025-05-07 10:47:44.039 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586064006ayw  [0;39m <==        Row: 1746533892224, 12345667
-2025-05-07 10:47:44.040 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586064006ayw  [0;39m <==      Total: 1
-2025-05-07 10:47:44.041 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m1746586064006ayw  [0;39m 系统异常：
-com.jiawa.train.common.exception.BusinessException: null
-2025-05-07 10:47:44.044 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1746586064006ayw  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2025-05-07 10:48:01.806 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746586081806gm1  [0;39m ------------- 开始 -------------
-2025-05-07 10:48:01.807 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746586081806gm1  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 10:48:01.807 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746586081806gm1  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 10:48:01.807 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746586081806gm1  [0;39m 远程地址: 127.0.0.1
-2025-05-07 10:48:01.807 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746586081806gm1  [0;39m 请求参数: [{"mobile":"12345667"}]
-2025-05-07 10:48:01.809 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586081806gm1  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 10:48:01.810 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586081806gm1  [0;39m ==> Parameters: 12345667(String)
-2025-05-07 10:48:01.811 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586081806gm1  [0;39m <==    Columns: id, mobile
-2025-05-07 10:48:01.811 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586081806gm1  [0;39m <==        Row: 1746533892224, 12345667
-2025-05-07 10:48:01.811 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586081806gm1  [0;39m <==      Total: 1
-2025-05-07 10:48:01.813 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m1746586081806gm1  [0;39m 系统异常：
-com.jiawa.train.common.exception.BusinessException: null
-2025-05-07 10:48:01.814 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1746586081806gm1  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2025-05-07 10:48:12.944 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746586092944lqy  [0;39m ------------- 开始 -------------
-2025-05-07 10:48:12.945 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746586092944lqy  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 10:48:12.945 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746586092944lqy  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 10:48:12.945 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746586092944lqy  [0;39m 远程地址: 127.0.0.1
-2025-05-07 10:48:12.945 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746586092944lqy  [0;39m 请求参数: [{"mobile":"12345667"}]
-2025-05-07 10:48:12.947 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586092944lqy  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 10:48:12.948 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586092944lqy  [0;39m ==> Parameters: 12345667(String)
-2025-05-07 10:48:12.949 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586092944lqy  [0;39m <==    Columns: id, mobile
-2025-05-07 10:48:12.949 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586092944lqy  [0;39m <==        Row: 1746533892224, 12345667
-2025-05-07 10:48:12.949 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586092944lqy  [0;39m <==      Total: 1
-2025-05-07 10:48:12.949 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m1746586092944lqy  [0;39m 系统异常：
-com.jiawa.train.common.exception.BusinessException: null
-2025-05-07 10:48:12.950 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1746586092944lqy  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2025-05-07 10:48:59.616 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m17465861396169o4  [0;39m ------------- 开始 -------------
-2025-05-07 10:48:59.616 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m17465861396169o4  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 10:48:59.616 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m17465861396169o4  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 10:48:59.616 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m17465861396169o4  [0;39m 远程地址: 127.0.0.1
-2025-05-07 10:48:59.618 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m17465861396169o4  [0;39m 请求参数: [{"mobile":"123456677"}]
-2025-05-07 10:48:59.619 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m17465861396169o4  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 10:48:59.620 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m17465861396169o4  [0;39m ==> Parameters: 123456677(String)
-2025-05-07 10:48:59.621 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m17465861396169o4  [0;39m <==      Total: 0
-2025-05-07 10:48:59.621 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :135  [32m17465861396169o4  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
-2025-05-07 10:48:59.622 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :135  [32m17465861396169o4  [0;39m ==> Parameters: 1746586139621(Long), 123456677(String)
-2025-05-07 10:48:59.643 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :135  [32m17465861396169o4  [0;39m <==    Updates: 1
-2025-05-07 10:48:59.648 INFO  com.jiawa.train.common.aspect.LogAspect           :107  [32m17465861396169o4  [0;39m 返回结果: {"content":1746586139621,"success":true}
-2025-05-07 10:48:59.649 INFO  com.jiawa.train.common.aspect.LogAspect           :108  [32m17465861396169o4  [0;39m ------------- 结束 耗时：33 ms -------------
-2025-05-07 10:49:19.324 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746586159324vt5  [0;39m ------------- 开始 -------------
-2025-05-07 10:49:19.324 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746586159324vt5  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 10:49:19.324 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746586159324vt5  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 10:49:19.324 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746586159324vt5  [0;39m 远程地址: 127.0.0.1
-2025-05-07 10:49:19.325 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746586159324vt5  [0;39m 请求参数: [{"mobile":"123456677"}]
-2025-05-07 10:49:19.327 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586159324vt5  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 10:49:19.327 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586159324vt5  [0;39m ==> Parameters: 123456677(String)
-2025-05-07 10:49:19.329 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586159324vt5  [0;39m <==    Columns: id, mobile
-2025-05-07 10:49:19.329 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586159324vt5  [0;39m <==        Row: 1746586139621, 123456677
-2025-05-07 10:49:19.329 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586159324vt5  [0;39m <==      Total: 1
-2025-05-07 10:49:19.329 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m1746586159324vt5  [0;39m 系统异常：
-com.jiawa.train.common.exception.BusinessException: null
-2025-05-07 10:49:19.330 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1746586159324vt5  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2025-05-07 10:49:33.163 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746586173163dng  [0;39m ------------- 开始 -------------
-2025-05-07 10:49:33.163 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746586173163dng  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 10:49:33.163 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746586173163dng  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 10:49:33.164 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746586173163dng  [0;39m 远程地址: 127.0.0.1
-2025-05-07 10:49:33.164 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746586173163dng  [0;39m 请求参数: [{"mobile":"123456677"}]
-2025-05-07 10:49:33.166 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586173163dng  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 10:49:33.166 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586173163dng  [0;39m ==> Parameters: 123456677(String)
-2025-05-07 10:49:33.167 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586173163dng  [0;39m <==    Columns: id, mobile
-2025-05-07 10:49:33.167 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746586173163dng  [0;39m <==        Row: 1746586139621, 123456677
-2025-05-07 10:49:33.168 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746586173163dng  [0;39m <==      Total: 1
-2025-05-07 10:49:33.168 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m1746586173163dng  [0;39m 系统异常：
-com.jiawa.train.common.exception.BusinessException: null
-2025-05-07 10:49:33.169 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1746586173163dng  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2025-05-07 10:50:15.495 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-07 10:50:15.498 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 10:50:15.499 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:50:15.513 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 10:50:15.514 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:50:15.516 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
-2025-05-07 10:50:15.519 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-2 - Shutdown completed.
-2025-05-07 10:50:15.594 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 7820 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 10:50:15.594 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 10:50:15.707 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=66c3d467-3fbb-3b17-aa84-5ccaedd30892
-2025-05-07 10:50:15.768 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 10:50:15.769 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:50:15.769 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 10:50:15.769 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 10:50:15.792 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 10:50:15.792 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 197 ms
-2025-05-07 10:50:15.982 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 10:50:16.010 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:50:16.017 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 10:50:16.029 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.47 seconds (process running for 426.955)
-2025-05-07 10:50:16.030 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 10:50:16.031 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 10:50:16.031 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 10:50:20.621 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-07 10:50:20.621 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2025-05-07 10:50:20.621 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
-2025-05-07 10:50:20.623 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m17465862206235p1  [0;39m ------------- 开始 -------------
-2025-05-07 10:50:20.623 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m17465862206235p1  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 10:50:20.623 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m17465862206235p1  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 10:50:20.623 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m17465862206235p1  [0;39m 远程地址: 127.0.0.1
-2025-05-07 10:50:20.625 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m17465862206235p1  [0;39m 请求参数: [{"mobile":"123456677"}]
-2025-05-07 10:50:20.627 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m17465862206235p1  [0;39m HikariPool-3 - Starting...
-2025-05-07 10:50:20.648 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m17465862206235p1  [0;39m HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f1edd7c
-2025-05-07 10:50:20.648 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m17465862206235p1  [0;39m HikariPool-3 - Start completed.
-2025-05-07 10:50:20.649 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m17465862206235p1  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 10:50:20.649 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m17465862206235p1  [0;39m ==> Parameters: 123456677(String)
-2025-05-07 10:50:20.651 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m17465862206235p1  [0;39m <==    Columns: id, mobile
-2025-05-07 10:50:20.651 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m17465862206235p1  [0;39m <==        Row: 1746586139621, 123456677
-2025-05-07 10:50:20.651 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m17465862206235p1  [0;39m <==      Total: 1
-2025-05-07 10:50:20.653 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m17465862206235p1  [0;39m 系统异常：手机号已注册
-2025-05-07 10:50:20.655 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m17465862206235p1  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2025-05-07 10:57:52.955 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 18 class path changes (0 additions, 0 deletions, 18 modifications)
-2025-05-07 10:57:52.957 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 10:57:52.957 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:57:52.973 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 10:57:52.974 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:57:52.977 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
-2025-05-07 10:57:52.979 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-3 - Shutdown completed.
-2025-05-07 10:57:53.057 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 7820 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 10:57:53.058 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 10:57:53.194 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=66c3d467-3fbb-3b17-aa84-5ccaedd30892
-2025-05-07 10:57:53.270 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 10:57:53.270 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:57:53.270 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 10:57:53.270 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 10:57:53.292 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 10:57:53.293 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 234 ms
-2025-05-07 10:57:53.489 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 10:57:53.523 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:57:53.526 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 10:57:53.537 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.519 seconds (process running for 884.464)
-2025-05-07 10:57:53.538 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 10:57:53.538 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 10:57:53.539 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 10:58:51.877 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-07 10:58:51.878 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 10:58:51.878 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:58:51.892 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 10:58:51.892 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:58:51.967 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 7820 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 10:58:51.968 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 10:58:52.083 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=66c3d467-3fbb-3b17-aa84-5ccaedd30892
-2025-05-07 10:58:52.167 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 10:58:52.167 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:58:52.168 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 10:58:52.168 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 10:58:52.194 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 10:58:52.194 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 225 ms
-2025-05-07 10:58:52.426 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 10:58:52.465 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 10:58:52.469 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 10:58:52.479 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.549 seconds (process running for 943.406)
-2025-05-07 10:58:52.480 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 10:58:52.480 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 10:58:52.480 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 10:58:55.282 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 10:58:55.305 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 11:03:38.922 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
-2025-05-07 11:03:38.981 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 14204 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 11:03:38.983 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 11:03:39.041 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-07 11:03:39.041 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-07 11:03:39.804 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 11:03:40.303 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 11:03:40.316 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:03:40.317 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 11:03:40.317 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 11:03:40.387 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 11:03:40.388 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1347 ms
-2025-05-07 11:03:41.150 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 11:03:41.210 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:03:41.229 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 11:03:41.247 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 2.812 seconds (process running for 3.43)
-2025-05-07 11:03:41.252 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 11:03:41.252 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 11:04:01.701 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-07 11:04:01.701 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2025-05-07 11:04:01.702 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
-2025-05-07 11:04:01.755 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746587041752g4n  [0;39m ------------- 开始 -------------
-2025-05-07 11:04:01.755 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746587041752g4n  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 11:04:01.755 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746587041752g4n  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 11:04:01.755 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746587041752g4n  [0;39m 远程地址: 127.0.0.1
-2025-05-07 11:04:01.843 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746587041752g4n  [0;39m 请求参数: [{"mobile":"123456677"}]
-2025-05-07 11:04:01.876 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1746587041752g4n  [0;39m HikariPool-1 - Starting...
-2025-05-07 11:04:02.146 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1746587041752g4n  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24fd6ac4
-2025-05-07 11:04:02.147 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1746587041752g4n  [0;39m HikariPool-1 - Start completed.
-2025-05-07 11:04:02.152 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746587041752g4n  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 11:04:02.169 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746587041752g4n  [0;39m ==> Parameters: 123456677(String)
-2025-05-07 11:04:02.183 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746587041752g4n  [0;39m <==    Columns: id, mobile
-2025-05-07 11:04:02.184 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746587041752g4n  [0;39m <==        Row: 1746586139621, 123456677
-2025-05-07 11:04:02.185 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746587041752g4n  [0;39m <==      Total: 1
-2025-05-07 11:04:02.191 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m1746587041752g4n  [0;39m 系统异常：手机号已注册
-2025-05-07 11:04:02.223 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1746587041752g4n  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2025-05-07 11:04:10.666 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：
-org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.jiawa.train.common.resp.CommonResp<java.lang.Long> com.jiawa.train.member.controller.MemberController.register(com.jiawa.train.member.req.MemberRegisterReq): [Field error in object 'memberRegisterReq' on field 'mobile': rejected value []; codes [NotBlank.memberRegisterReq.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberRegisterReq.mobile,mobile]; arguments []; default message [mobile]]; default message [[手机号]不能为空]] 
-	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-07 11:04:10.670 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.jiawa.train.common.resp.CommonResp<java.lang.Long> com.jiawa.train.member.controller.MemberController.register(com.jiawa.train.member.req.MemberRegisterReq): [Field error in object 'memberRegisterReq' on field 'mobile': rejected value []; codes [NotBlank.memberRegisterReq.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberRegisterReq.mobile,mobile]; arguments []; default message [mobile]]; default message [[手机号]不能为空]] ]
-2025-05-07 11:11:10.305 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-05-07 11:11:10.309 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 11:11:10.310 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:11:10.326 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 11:11:10.326 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:11:10.333 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2025-05-07 11:11:10.340 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2025-05-07 11:11:10.454 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 14204 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 11:11:10.454 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 11:11:10.612 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 11:11:10.688 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 11:11:10.688 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:11:10.689 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 11:11:10.689 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 11:11:10.714 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 11:11:10.714 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 259 ms
-2025-05-07 11:11:10.948 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 11:11:10.987 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:11:10.993 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 11:11:11.007 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.607 seconds (process running for 453.19)
-2025-05-07 11:11:11.008 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 11:11:11.009 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 11:11:11.010 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 11:11:12.385 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-05-07 11:11:12.388 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 11:11:12.389 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:11:12.402 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 11:11:12.403 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:11:12.472 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 14204 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 11:11:12.472 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 11:11:12.585 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 11:11:12.640 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 11:11:12.641 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:11:12.641 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 11:11:12.641 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 11:11:12.663 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 11:11:12.663 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 190 ms
-2025-05-07 11:11:12.850 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 11:11:12.880 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:11:12.882 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 11:11:12.892 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.451 seconds (process running for 455.076)
-2025-05-07 11:11:12.893 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 11:11:12.893 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 11:11:12.893 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 11:11:15.142 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 11:11:15.161 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 11:13:52.193 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
-2025-05-07 11:13:52.229 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 14792 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 11:13:52.230 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 11:13:52.268 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-07 11:13:52.269 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-07 11:13:52.892 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 11:13:53.381 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 11:13:53.393 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:13:53.394 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 11:13:53.394 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 11:13:53.441 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 11:13:53.442 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1173 ms
-2025-05-07 11:13:54.122 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 11:13:54.178 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 11:13:54.193 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 11:13:54.208 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 2.374 seconds (process running for 3.167)
-2025-05-07 11:13:54.210 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 11:13:54.210 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 11:13:58.921 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-07 11:13:58.921 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2025-05-07 11:13:58.922 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
-2025-05-07 17:08:01.755 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：Validation failed for argument [0] in public com.jiawa.train.common.resp.CommonResp<java.lang.Long> com.jiawa.train.member.controller.MemberController.register(com.jiawa.train.member.req.MemberRegisterReq): [Field error in object 'memberRegisterReq' on field 'mobile': rejected value []; codes [NotBlank.memberRegisterReq.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberRegisterReq.mobile,mobile]; arguments []; default message [mobile]]; default message [[手机号]不能为空]] 
-2025-05-07 17:08:01.827 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 17:08:01.933 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.jiawa.train.common.resp.CommonResp<java.lang.Long> com.jiawa.train.member.controller.MemberController.register(com.jiawa.train.member.req.MemberRegisterReq): [Field error in object 'memberRegisterReq' on field 'mobile': rejected value []; codes [NotBlank.memberRegisterReq.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberRegisterReq.mobile,mobile]; arguments []; default message [mobile]]; default message [[手机号]不能为空]] ]
-2025-05-07 17:08:01.971 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 17:08:17.741 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
-2025-05-07 17:08:17.771 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 30256 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 17:08:17.772 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 17:08:17.819 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-07 17:08:17.819 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-07 17:08:18.352 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 17:08:18.807 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 17:08:18.925 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:08:18.926 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 17:08:18.926 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 17:08:18.969 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 17:08:18.970 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1151 ms
-2025-05-07 17:08:19.649 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 17:08:19.711 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:08:19.726 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 17:08:19.741 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 2.389 seconds (process running for 3.03)
-2025-05-07 17:08:19.744 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 17:08:19.744 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 17:08:25.569 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-07 17:08:25.569 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2025-05-07 17:08:25.570 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
-2025-05-07 17:08:25.625 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：[手机号]不能为空
-2025-05-07 17:08:25.654 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.jiawa.train.common.resp.CommonResp<java.lang.Long> com.jiawa.train.member.controller.MemberController.register(com.jiawa.train.member.req.MemberRegisterReq): [Field error in object 'memberRegisterReq' on field 'mobile': rejected value []; codes [NotBlank.memberRegisterReq.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberRegisterReq.mobile,mobile]; arguments []; default message [mobile]]; default message [[手机号]不能为空]] ]
-2025-05-07 17:09:36.367 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 17:09:36.387 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 17:09:41.493 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
-2025-05-07 17:09:41.530 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 12976 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 17:09:41.531 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 17:09:41.568 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-07 17:09:41.568 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-07 17:09:42.096 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 17:09:42.532 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 17:09:42.544 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:09:42.545 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 17:09:42.545 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 17:09:42.590 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 17:09:42.591 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1022 ms
-2025-05-07 17:09:43.195 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 17:09:43.251 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:09:43.263 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 17:09:43.278 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 2.209 seconds (process running for 2.881)
-2025-05-07 17:09:43.280 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 17:09:43.280 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 17:09:47.938 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-07 17:09:47.939 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2025-05-07 17:09:47.941 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
-2025-05-07 17:09:48.006 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：[手机号]不能为空
-2025-05-07 17:09:48.044 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.jiawa.train.common.resp.CommonResp<java.lang.Long> com.jiawa.train.member.controller.MemberController.register(com.jiawa.train.member.req.MemberRegisterReq): [Field error in object 'memberRegisterReq' on field 'mobile': rejected value []; codes [NotBlank.memberRegisterReq.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberRegisterReq.mobile,mobile]; arguments []; default message [mobile]]; default message [[手机号]不能为空]] ]
-2025-05-07 17:23:50.198 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-05-07 17:23:50.203 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 17:23:50.204 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:50.217 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 17:23:50.217 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:50.304 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 12976 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 17:23:50.304 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 17:23:50.433 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 17:23:50.487 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 17:23:50.488 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:50.489 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 17:23:50.489 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 17:23:50.508 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 17:23:50.508 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 202 ms
-2025-05-07 17:23:50.734 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 17:23:50.782 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:50.790 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 17:23:50.806 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.539 seconds (process running for 850.409)
-2025-05-07 17:23:50.811 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 17:23:50.812 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 17:23:50.812 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 17:23:56.213 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-05-07 17:23:56.215 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 17:23:56.216 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:56.233 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 17:23:56.234 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:56.347 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 12976 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 17:23:56.347 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 17:23:56.487 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 17:23:56.549 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 17:23:56.551 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:56.551 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 17:23:56.551 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 17:23:56.573 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 17:23:56.574 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 223 ms
-2025-05-07 17:23:56.822 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 17:23:56.874 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:56.876 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 17:23:56.891 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.592 seconds (process running for 856.494)
-2025-05-07 17:23:56.895 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 17:23:56.895 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 17:23:56.896 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 17:23:58.263 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-05-07 17:23:58.265 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 17:23:58.267 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:58.282 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 17:23:58.282 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:58.350 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 12976 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 17:23:58.350 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 17:23:58.462 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 17:23:58.521 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 17:23:58.522 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:58.523 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 17:23:58.523 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 17:23:58.542 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 17:23:58.543 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 192 ms
-2025-05-07 17:23:58.725 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 17:23:58.752 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:23:58.754 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 17:23:58.766 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.45 seconds (process running for 858.368)
-2025-05-07 17:23:58.766 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 17:23:58.767 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 17:23:58.767 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 17:25:17.574 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-05-07 17:25:17.575 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 17:25:17.580 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:25:17.593 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 17:25:17.594 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:25:17.688 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 12976 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 17:25:17.688 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 17:25:17.848 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 17:25:17.924 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 17:25:17.925 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:25:17.925 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 17:25:17.926 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 17:25:17.951 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 17:25:17.952 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 263 ms
-2025-05-07 17:25:18.178 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 17:25:18.210 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:25:18.212 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 17:25:18.224 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.576 seconds (process running for 937.826)
-2025-05-07 17:25:18.224 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 17:25:18.225 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 17:25:18.225 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 17:25:19.597 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-05-07 17:25:19.598 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 17:25:19.599 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:25:19.613 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 17:25:19.613 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:25:19.679 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 12976 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
-2025-05-07 17:25:19.679 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2025-05-07 17:25:19.793 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=4f982214-b4f4-3cb0-8e4f-2b16ca3677ba
-2025-05-07 17:25:19.846 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
-2025-05-07 17:25:19.846 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:25:19.846 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
-2025-05-07 17:25:19.847 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-07 17:25:19.865 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2025-05-07 17:25:19.865 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 184 ms
-2025-05-07 17:25:20.055 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2025-05-07 17:25:20.081 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2025-05-07 17:25:20.085 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
-2025-05-07 17:25:20.095 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.448 seconds (process running for 939.698)
-2025-05-07 17:25:20.097 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2025-05-07 17:25:20.098 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
-2025-05-07 17:25:20.098 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
-2025-05-07 17:25:40.859 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-07 17:25:40.859 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2025-05-07 17:25:40.859 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
-2025-05-07 17:25:40.874 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746609940868sot  [0;39m ------------- 开始 -------------
-2025-05-07 17:25:40.876 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746609940868sot  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 17:25:40.877 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746609940868sot  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 17:25:40.877 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746609940868sot  [0;39m 远程地址: 127.0.0.1
-2025-05-07 17:25:41.018 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746609940868sot  [0;39m 请求参数: [{"mobile":"1221"}]
-2025-05-07 17:25:41.058 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1746609940868sot  [0;39m HikariPool-1 - Starting...
-2025-05-07 17:25:41.414 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1746609940868sot  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63267e94
-2025-05-07 17:25:41.415 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1746609940868sot  [0;39m HikariPool-1 - Start completed.
-2025-05-07 17:25:41.419 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746609940868sot  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 17:25:41.441 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746609940868sot  [0;39m ==> Parameters: 1221(String)
-2025-05-07 17:25:41.459 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746609940868sot  [0;39m <==      Total: 0
-2025-05-07 17:25:41.475 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :135  [32m1746609940868sot  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
-2025-05-07 17:25:41.477 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :135  [32m1746609940868sot  [0;39m ==> Parameters: 1920047374420545536(Long), 1221(String)
-2025-05-07 17:25:41.493 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :135  [32m1746609940868sot  [0;39m <==    Updates: 1
-2025-05-07 17:25:41.499 INFO  com.jiawa.train.common.aspect.LogAspect           :107  [32m1746609940868sot  [0;39m 返回结果: {"content":1920047374420545536,"success":true}
-2025-05-07 17:25:41.499 INFO  com.jiawa.train.common.aspect.LogAspect           :108  [32m1746609940868sot  [0;39m ------------- 结束 耗时：631 ms -------------
-2025-05-07 17:25:49.897 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746609949897gyw  [0;39m ------------- 开始 -------------
-2025-05-07 17:25:49.898 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746609949897gyw  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2025-05-07 17:25:49.898 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746609949897gyw  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2025-05-07 17:25:49.898 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746609949897gyw  [0;39m 远程地址: 127.0.0.1
-2025-05-07 17:25:49.898 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746609949897gyw  [0;39m 请求参数: [{"mobile":"122121"}]
-2025-05-07 17:25:49.900 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746609949897gyw  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2025-05-07 17:25:49.901 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746609949897gyw  [0;39m ==> Parameters: 122121(String)
-2025-05-07 17:25:49.903 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746609949897gyw  [0;39m <==      Total: 0
-2025-05-07 17:25:49.903 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :135  [32m1746609949897gyw  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
-2025-05-07 17:25:49.903 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :135  [32m1746609949897gyw  [0;39m ==> Parameters: 1920047409774333952(Long), 122121(String)
-2025-05-07 17:25:49.910 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :135  [32m1746609949897gyw  [0;39m <==    Updates: 1
-2025-05-07 17:25:49.911 INFO  com.jiawa.train.common.aspect.LogAspect           :107  [32m1746609949897gyw  [0;39m 返回结果: {"content":1920047409774333952,"success":true}
-2025-05-07 17:25:49.911 INFO  com.jiawa.train.common.aspect.LogAspect           :108  [32m1746609949897gyw  [0;39m ------------- 结束 耗时：14 ms -------------
-2025-05-07 17:28:07.045 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-07 17:28:07.058 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
-2025-05-07 17:28:07.061 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2025-05-07 17:28:07.072 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2025-05-08 10:35:47.628 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
+2025-05-08 10:35:47.696 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 22932 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
+2025-05-08 10:35:47.697 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-08 10:35:47.752 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-08 10:35:47.752 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-08 10:35:48.379 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=76df00b8-05fd-37ca-8efa-3852515532e5
+2025-05-08 10:35:48.896 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
+2025-05-08 10:35:48.908 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:35:48.910 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
+2025-05-08 10:35:48.910 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-08 10:35:48.964 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-05-08 10:35:48.964 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1211 ms
+2025-05-08 10:35:49.709 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-05-08 10:35:49.774 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:35:49.788 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
+2025-05-08 10:35:49.802 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 2.545 seconds (process running for 3.277)
+2025-05-08 10:35:49.804 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
+2025-05-08 10:35:49.804 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
+2025-05-08 10:37:52.384 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-08 10:37:52.384 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-05-08 10:37:52.385 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2025-05-08 10:37:52.443 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m17466718724372tz  [0;39m ------------- 开始 -------------
+2025-05-08 10:37:52.444 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m17466718724372tz  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2025-05-08 10:37:52.444 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m17466718724372tz  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
+2025-05-08 10:37:52.444 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m17466718724372tz  [0;39m 远程地址: 127.0.0.1
+2025-05-08 10:37:52.563 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m17466718724372tz  [0;39m 请求参数: [{"code":"1234","mobile":"12301231168"}]
+2025-05-08 10:37:52.599 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m17466718724372tz  [0;39m HikariPool-1 - Starting...
+2025-05-08 10:37:52.911 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m17466718724372tz  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b8205a7
+2025-05-08 10:37:52.912 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m17466718724372tz  [0;39m HikariPool-1 - Start completed.
+2025-05-08 10:37:52.917 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m17466718724372tz  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2025-05-08 10:37:52.939 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m17466718724372tz  [0;39m ==> Parameters: 12301231168(String)
+2025-05-08 10:37:52.960 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m17466718724372tz  [0;39m <==      Total: 0
+2025-05-08 10:37:52.969 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m17466718724372tz  [0;39m 系统异常：请先获取短信验证码
+2025-05-08 10:37:53.003 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m17466718724372tz  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
+2025-05-08 10:38:07.838 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746671887838cc6  [0;39m ------------- 开始 -------------
+2025-05-08 10:38:07.838 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746671887838cc6  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2025-05-08 10:38:07.839 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746671887838cc6  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
+2025-05-08 10:38:07.839 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746671887838cc6  [0;39m 远程地址: 127.0.0.1
+2025-05-08 10:38:07.839 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746671887838cc6  [0;39m 请求参数: [{"code":"1234","mobile":"12301234568"}]
+2025-05-08 10:38:07.842 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671887838cc6  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2025-05-08 10:38:07.842 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671887838cc6  [0;39m ==> Parameters: 12301234568(String)
+2025-05-08 10:38:07.845 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746671887838cc6  [0;39m <==    Columns: id, mobile
+2025-05-08 10:38:07.845 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746671887838cc6  [0;39m <==        Row: 1920118052398174208, 12301234568
+2025-05-08 10:38:07.849 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671887838cc6  [0;39m <==      Total: 1
+2025-05-08 10:38:07.850 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m1746671887838cc6  [0;39m 系统异常：短信验证码错误
+2025-05-08 10:38:07.851 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1746671887838cc6  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
+2025-05-08 10:38:12.391 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-05-08 10:38:12.394 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08 10:38:12.395 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:38:12.411 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-05-08 10:38:12.412 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:38:12.416 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2025-05-08 10:38:12.422 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2025-05-08 10:38:12.511 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 22932 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
+2025-05-08 10:38:12.511 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-08 10:38:12.656 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=76df00b8-05fd-37ca-8efa-3852515532e5
+2025-05-08 10:38:12.733 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
+2025-05-08 10:38:12.734 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:38:12.734 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
+2025-05-08 10:38:12.734 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-08 10:38:12.758 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-05-08 10:38:12.759 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 246 ms
+2025-05-08 10:38:13.026 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-05-08 10:38:13.064 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:38:13.067 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
+2025-05-08 10:38:13.079 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.608 seconds (process running for 146.555)
+2025-05-08 10:38:13.080 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-05-08 10:38:13.081 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
+2025-05-08 10:38:13.081 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
+2025-05-08 10:38:14.460 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-05-08 10:38:14.464 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08 10:38:14.465 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:38:14.478 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-05-08 10:38:14.479 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:38:14.548 INFO  com.jiawa.train.member.config.MemberApplication   :53   [32m                  [0;39m Starting MemberApplication using Java 21.0.2 with PID 22932 (E:\12306-train\train\member\target\classes started by user in E:\12306-train\train)
+2025-05-08 10:38:14.548 INFO  com.jiawa.train.member.config.MemberApplication   :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-05-08 10:38:14.659 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=76df00b8-05fd-37ca-8efa-3852515532e5
+2025-05-08 10:38:14.714 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8001 (http)
+2025-05-08 10:38:14.715 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:38:14.715 INFO  org.apache.catalina.core.StandardService          :168  [32m                  [0;39m Starting service [Tomcat]
+2025-05-08 10:38:14.715 INFO  org.apache.catalina.core.StandardEngine           :168  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-08 10:38:14.736 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-05-08 10:38:14.736 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 187 ms
+2025-05-08 10:38:14.919 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-05-08 10:38:14.947 INFO  org.apache.coyote.http11.Http11NioProtocol        :168  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2025-05-08 10:38:14.950 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8001 (http) with context path '/member'
+2025-05-08 10:38:14.961 INFO  com.jiawa.train.member.config.MemberApplication   :59   [32m                  [0;39m Started MemberApplication in 0.443 seconds (process running for 148.437)
+2025-05-08 10:38:14.962 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-05-08 10:38:14.962 INFO  com.jiawa.train.member.config.MemberApplication   :23   [32m                  [0;39m 启动成功!
+2025-05-08 10:38:14.963 INFO  com.jiawa.train.member.config.MemberApplication   :24   [32m                  [0;39m 地址：	http://127.0.0.1:8001/test
+2025-05-08 10:38:30.067 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :168  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-08 10:38:30.067 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-05-08 10:38:30.069 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2025-05-08 10:38:30.087 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：[短信验证码]不能为空
+2025-05-08 10:38:30.089 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.jiawa.train.common.resp.CommonResp<com.jiawa.train.member.resp.MemberLoginResp> com.jiawa.train.member.controller.MemberController.login(com.jiawa.train.member.req.MemberLoginReq): [Field error in object 'memberLoginReq' on field 'code': rejected value [null]; codes [NotBlank.memberLoginReq.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberLoginReq.code,code]; arguments []; default message [code]]; default message [[短信验证码]不能为空]] ]
+2025-05-08 10:38:37.224 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746671917223iwk  [0;39m ------------- 开始 -------------
+2025-05-08 10:38:37.224 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746671917223iwk  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2025-05-08 10:38:37.224 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746671917223iwk  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
+2025-05-08 10:38:37.224 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746671917223iwk  [0;39m 远程地址: 127.0.0.1
+2025-05-08 10:38:37.228 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746671917223iwk  [0;39m 请求参数: [{"code":"8888","mobile":"12301234568"}]
+2025-05-08 10:38:37.233 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1746671917223iwk  [0;39m HikariPool-2 - Starting...
+2025-05-08 10:38:37.257 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1746671917223iwk  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26c0fb0e
+2025-05-08 10:38:37.258 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1746671917223iwk  [0;39m HikariPool-2 - Start completed.
+2025-05-08 10:38:37.259 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671917223iwk  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2025-05-08 10:38:37.260 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671917223iwk  [0;39m ==> Parameters: 12301234568(String)
+2025-05-08 10:38:37.263 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746671917223iwk  [0;39m <==    Columns: id, mobile
+2025-05-08 10:38:37.263 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746671917223iwk  [0;39m <==        Row: 1920118052398174208, 12301234568
+2025-05-08 10:38:37.263 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671917223iwk  [0;39m <==      Total: 1
+2025-05-08 10:38:37.294 INFO  com.jiawa.train.common.aspect.LogAspect           :107  [32m1746671917223iwk  [0;39m 返回结果: {"content":{"id":1920118052398174208,"mobile":"12301234568"},"success":true}
+2025-05-08 10:38:37.294 INFO  com.jiawa.train.common.aspect.LogAspect           :108  [32m1746671917223iwk  [0;39m ------------- 结束 耗时：71 ms -------------
+2025-05-08 10:38:52.060 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746671932060tbr  [0;39m ------------- 开始 -------------
+2025-05-08 10:38:52.060 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746671932060tbr  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2025-05-08 10:38:52.060 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746671932060tbr  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
+2025-05-08 10:38:52.061 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746671932060tbr  [0;39m 远程地址: 127.0.0.1
+2025-05-08 10:38:52.061 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746671932060tbr  [0;39m 请求参数: [{"code":"8888","mobile":"12301234568"}]
+2025-05-08 10:38:52.063 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671932060tbr  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2025-05-08 10:38:52.063 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671932060tbr  [0;39m ==> Parameters: 12301234568(String)
+2025-05-08 10:38:52.066 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746671932060tbr  [0;39m <==    Columns: id, mobile
+2025-05-08 10:38:52.066 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746671932060tbr  [0;39m <==        Row: 1920118052398174208, 12301234568
+2025-05-08 10:38:52.067 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671932060tbr  [0;39m <==      Total: 1
+2025-05-08 10:38:52.067 INFO  com.jiawa.train.common.aspect.LogAspect           :107  [32m1746671932060tbr  [0;39m 返回结果: {"content":{"id":1920118052398174208,"mobile":"12301234568"},"success":true}
+2025-05-08 10:38:52.067 INFO  com.jiawa.train.common.aspect.LogAspect           :108  [32m1746671932060tbr  [0;39m ------------- 结束 耗时：7 ms -------------
+2025-05-08 10:38:56.351 INFO  com.jiawa.train.common.aspect.LogAspect           :52   [32m1746671936351ldt  [0;39m ------------- 开始 -------------
+2025-05-08 10:38:56.351 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1746671936351ldt  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2025-05-08 10:38:56.351 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1746671936351ldt  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
+2025-05-08 10:38:56.351 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1746671936351ldt  [0;39m 远程地址: 127.0.0.1
+2025-05-08 10:38:56.351 INFO  com.jiawa.train.common.aspect.LogAspect           :83   [32m1746671936351ldt  [0;39m 请求参数: [{"code":"8888","mobile":"12301234568"}]
+2025-05-08 10:38:56.353 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671936351ldt  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2025-05-08 10:38:56.353 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671936351ldt  [0;39m ==> Parameters: 12301234568(String)
+2025-05-08 10:38:56.354 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746671936351ldt  [0;39m <==    Columns: id, mobile
+2025-05-08 10:38:56.354 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :141  [32m1746671936351ldt  [0;39m <==        Row: 1920118052398174208, 12301234568
+2025-05-08 10:38:56.354 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :135  [32m1746671936351ldt  [0;39m <==      Total: 1
+2025-05-08 10:38:56.355 INFO  com.jiawa.train.common.aspect.LogAspect           :107  [32m1746671936351ldt  [0;39m 返回结果: {"content":{"id":1920118052398174208,"mobile":"12301234568"},"success":true}
+2025-05-08 10:38:56.355 INFO  com.jiawa.train.common.aspect.LogAspect           :108  [32m1746671936351ldt  [0;39m ------------- 结束 耗时：4 ms -------------
+2025-05-08 10:39:48.971 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08 10:39:48.985 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-05-08 10:39:48.987 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2025-05-08 10:39:48.992 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-2 - Shutdown completed.

@@ -41,14 +41,16 @@
 import { reactive } from 'vue';
 import axios from "axios";
 import {notification} from "ant-design-vue";
+import {useRouter} from "vue-router";
 
+const router = useRouter();
 const loginForm = reactive({
   mobile:'12345678',
   code:'',
 });
 
 const sendCode = () => {
-  axios.post( "http://127.0.0.1:8000/member/member/send-code", {
+  axios.post( "/member/member/send-code", {
     mobile: loginForm.mobile
   }).then(response => {
     //console.log(response);
@@ -63,11 +65,13 @@ const sendCode = () => {
 };
 
 const login = () => {
-  axios.post("http://127.0.0.1:8000/member/member/login", loginForm).then( response => {
+  axios.post("/member/member/login", loginForm).then( response => {
     let data = response.data;
     if(data.success){
       notification.success({description:'登录成功！'});
       //console.log("登录成功：", data.content);
+      //跳转到main主页
+      router.push("/");
     } else{
       notification.error({description: data.message});
     }

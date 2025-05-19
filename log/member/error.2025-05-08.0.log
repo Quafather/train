@@ -1,0 +1,9 @@
+2025-05-08 10:37:52.969 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m17466718724372tz  [0;39m 系统异常：请先获取短信验证码
+2025-05-08 10:38:07.850 ERROR c.j.t.common.controller.ControllerExceptionHandler:31   [32m1746671887838cc6  [0;39m 系统异常：短信验证码错误
+2025-05-08 10:38:30.087 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：[短信验证码]不能为空
+2025-05-08 17:27:05.539 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：[手机号]不能为空
+2025-05-08 17:27:11.746 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：[手机号]不能为空
+2025-05-08 17:27:28.715 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：[手机号]不能为空
+2025-05-08 17:28:10.071 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：[手机号]不能为空
+2025-05-08 17:28:13.249 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：[手机号]不能为空
+2025-05-08 17:36:36.284 ERROR c.j.t.common.controller.ControllerExceptionHandler:51   [32m                  [0;39m 系统异常：手机号码格式错误

@@ -1,5 +1,6 @@
-POST http://127.0.0.1:8001/member/passenger/save
+POST http://127.0.0.1:8000/member/passenger/save
 Content-Type: application/json
+token: {{token}}
 
 {
   "name": "test",
